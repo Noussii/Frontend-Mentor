@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+/* 
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 350px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+
+        .profile {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .location {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #777;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social-item {
+            display: block;
+            text-decoration: none;
+            font-size: 0.85rem;
+            color: #0F0F0F;
+            background-color: #FFB703;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        } */
+
+
+        body{
+            background-color: hsl(0, 0%, 8%);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card{
+            background-color: hsl(0, 0%, 12%);
+            padding: 25px;
+            text-align: center;
+            max-width: 350px;
+            border-radius: 10px;
+
+        }
+
+        .profile{
+            border-radius: 50%;
+        }
+
+        h3{
+            color: hsl(0, 0%, 100%);
+            letter-spacing: 0.05rem;
+        }
+
+        .location{
+            color: hsl(75, 94%, 57%);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .description{
+            color:hsl(0, 0%, 100%) ;
+            margin-bottom: 20px;
+        }
+
+        .social-links{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+        .social-item{
+            text-decoration: none;
+            color: hsl(0, 0%, 100%);
+            font-size: 0.85rem;
+            background-color: hsl(0, 0%, 20%);
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .social-item:hover{
+            color: black;
+            background-color: hsl(75, 94%, 57%);
+            transition: 0.4s ease-in-out;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="./assets/images/avatar-jessica.jpeg" alt="img not found" class="profile">
+        <h3>Jessica Randal</h3>
+        <p class="location">London, United Kingdom</p>
+        <p class="description">"Front end developer and avid reader"</p>
+        <div class="social-links">
+            <a href="#" class="social-item">Github</a>
+            <a href="#" class="social-item">Frontend Mentor</a>
+            <a href="#" class="social-item">LinkedIn</a>
+            <a href="#" class="social-item">Twitter</a>
+            <a href="#" class="social-item">Instagram</a>
+        </div>
+    </div>
+</body>
+
+</html>
