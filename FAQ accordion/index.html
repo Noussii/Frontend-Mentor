@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <main>
+
+        <div class="FAQs">
+
+            <div class="FAQs-details">
+                <img src="./assets/images/icon-star.svg" alt="img not found" class="FAQstar">
+                <h1 class="FAQtitle">FAQs</h1>
+            </div>
+
+            <div class="FAQs-questions">
+                <div class="FAQs-item">
+                    <div class="FAQs-wrapper">
+                        <h3 class="FAQs-question">1.Lorem ipsum dolor sit amet consectetur adipisicing elit? </h3>
+                        <button onclick="toggleAnswer(this)">
+                                <img src="./assets/images/icon-plus.svg" alt="icon not found" class="FAQs-icon">                        
+                        </button> 
+                    </div>
+
+                    <p class="FAQs-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ex. Dolores atque voluptates ut debitis itaque distinctio! Illo exercitationem adipisci atque, 
+                        ecessitatibus veritatis beatae, doloremque voluptatum hic nobis deleniti eligendi magni libero sequi sapiente ex aut optio debitis incidunt! Obcaecati 
+                        debitis quo saepe fuga tenetur facilis dolore eius eveniet mollitia.</p>
+                </div>
+
+                <div class="FAQs-item">
+                    <div class="FAQs-wrapper">
+                        <h3 class="FAQs-question">2.Lorem ipsum dolor sit amet consectetur adipisicing elit? </h3>
+                        <button onclick="toggleAnswer(this)">
+                                <img src="./assets/images/icon-plus.svg" alt="icon not found" class="FAQs-icon">                        
+                        </button> 
+                    </div>
+
+                    <p class="FAQs-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ex. Dolores atque voluptates ut debitis itaque distinctio! Illo exercitationem adipisci atque, 
+                        ecessitatibus veritatis beatae, doloremque voluptatum hic nobis deleniti eligendi magni libero sequi sapiente ex aut optio debitis incidunt! Obcaecati 
+                        debitis quo saepe fuga tenetur facilis dolore eius eveniet mollitia.</p>
+                </div>
+
+                <div class="FAQs-item">
+                    <div class="FAQs-wrapper">
+                        <h3 class="FAQs-question">3.Lorem ipsum dolor sit amet consectetur adipisicing elit? </h3>
+                        <button onclick="toggleAnswer(this)">
+                                <img src="./assets/images/icon-plus.svg" alt="icon not found" class="FAQs-icon">                        
+                        </button> 
+                    </div>
+
+                    <p class="FAQs-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ex. Dolores atque voluptates ut debitis itaque distinctio! Illo exercitationem adipisci atque, 
+                        ecessitatibus veritatis beatae, doloremque voluptatum hic nobis deleniti eligendi magni libero sequi sapiente ex aut optio debitis incidunt! Obcaecati 
+                        debitis quo saepe fuga tenetur facilis dolore eius eveniet mollitia.</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+    
+    <script>
+function toggleAnswer(element) {
+    const answer = element.parentElement.nextElementSibling;
+    const icon = element.querySelector('img');
+
+    if (answer.style.display === 'none' || answer.style.display === '') {
+        answer.style.display = 'block';
+        icon.src = './assets/images/icon-plus.svg'; 
+    } else {
+        answer.style.display = 'none';
+        icon.src = './assets/images/icon-minus.svg'; 
+    }
+}
+
+    </script>
+
+</body>
+</html>
