@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        :root{
+            --Soft-orange: hsl(35, 77%, 62%);
+            --Soft-red: hsl(5, 85%, 63%);
+            --Off-white: hsl(36, 100%, 99%);
+            --Grayish-blue: hsl(233, 8%, 79%);
+            --Dark-grayish-blue: hsl(236, 13%, 42%);
+            --Very-dark-blue: hsl(240, 100%, 5%);
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color:var(--Off-white) ;
+            font-family: 'Inter';
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+        }
+
+        .logo{
+            width: 50px;
+        }
+
+        .nav-menu{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-item{
+            list-style: none;
+        }
+
+        .nav-link{
+            text-decoration: none;
+            color: var(--Dark-grayish-blue);
+            font-weight: 400;
+        }
+
+        /*  */
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="./assets/images/logo.svg" alt="img not found" >
+
+
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">New</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Popular</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Trending</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article class="card-news">
+            <img class="card-logo" src="./assets/images/image-web-3-desktop.jpg" alt="img not found">
+            
+            <div class="card-content">
+                <h1 class="card-title">The Bright Future of Web 3.0?</h1>
+                <div class="card-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias tenetur porro fuga nam modi ipsa optio error? Deleniti, aliquam!</p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+        </article>
+
+        <aside>
+            <h1>New</h1>
+
+            <div class="aside-article">
+                <h3>Hydrogen VS Elecric Cars</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, possimus!</p>
+            </div>
+
+            <div class="aside-article">
+                <h3>Hydrogen VS Elecric Cars</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, possimus!</p>
+            </div>
+
+            <div class="aside-article">
+                <h3>Hydrogen VS Elecric Cars</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, possimus!</p>
+            </div>
+
+        </aside>
+    </section>
+
+
+
+    
+</body>
+</html>
